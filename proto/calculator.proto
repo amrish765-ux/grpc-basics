@@ -1,0 +1,41 @@
+syntax="proto3";
+
+option go_package="./proto";
+
+service CalculatorSevice{
+    rpc Add(AddRequest) returns (AddResponse){}
+    rpc Substract(SubstractRequest) returns (SubstractResponse){}
+    rpc Multiple(MultipleRequest) returns (MultipleResponse){}
+    rpc Divide(DivideRequest) returns (DivideResponse){}
+}
+
+message AddRequest{
+    int32 a=1;
+    int32 b=2;
+}
+message AddResponse{
+    int32 a=1;
+}
+message SubstractRequest{
+    int32 a=1;
+    int32 b=2;
+}
+message SubstractResponse{
+    int32 a=1;
+}
+
+message MultipleRequest{
+    int32 a=1;
+    int32 b=2;
+}
+message MultipleResponse{
+    int32 a=1;
+}
+
+message DivideRequest{
+    int32 a=1;
+    int32 b=2;
+}
+message DivideResponse{
+    int32 a=1;
+}

@@ -1,0 +1,8 @@
+create a  simlple grpc server and thier client
+
+create a proto
+generate protofiles
+
+write grpc server , start a grpc server 
+write grpc client , start a client, create a conn with the server from client
+
